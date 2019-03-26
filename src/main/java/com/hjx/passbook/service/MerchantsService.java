@@ -13,7 +13,7 @@ import com.hjx.passbook.VO.Response;
  */
 public interface MerchantsService {
     /** 创建商户请求*/
-    Response createMechants(CreateMerchantsRequest request);
+    Response createMerchants(CreateMerchantsRequest request);
 
     /**
      * 根据id构建商户信息
@@ -24,7 +24,8 @@ public interface MerchantsService {
 
     /**
      * 投放优惠券
-     * @return
+     * @param passTemplate {@link PassTemplate}
+     * @return {@link Response}
      */
     Response dropPassTemplate(PassTemplate passTemplate);
 }
